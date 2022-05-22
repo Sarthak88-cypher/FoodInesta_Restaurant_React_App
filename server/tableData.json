@@ -1,0 +1,22 @@
+{
+  "table2": [
+    {
+      "username": "Steve Rogers",
+      "mobile": "1122334455",
+      "guest": "2",
+      "time": "6pm",
+      "timeOfReservation": "Mon May 23 2022 00:34:50 GMT+0530 (India Standard Time)",
+      "id": 1
+    }
+  ],
+  "table4": [
+    {
+      "username": "Tony Stark",
+      "mobile": "1111222233",
+      "guest": "4",
+      "time": "7pm",
+      "timeOfReservation": "Mon May 23 2022 00:35:24 GMT+0530 (India Standard Time)",
+      "id": 1
+    }
+  ]
+}

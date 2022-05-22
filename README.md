@@ -1,70 +1,129 @@
-# Getting Started with Create React App
+# FoodInesta React App for Restaurant Table Booking & Cancellation For Dinner Only.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Responsive React Application with API Integrated Dummy Json Server & Unit Tested Using JEST
 
-## Available Scripts
+## Problem Statement :
 
-In the project directory, you can run:
+### - The restaurant has 10 dining tables with 5 of them having seating capacity for 4 people each, and the remaining 5 tables will have a seating capacity of 2 people each. Based on the booking request the table should be assigned automatically to the user.
 
-### `npm start`
+### - Design a React application to book a table for dinner only and design the relavant Entities. The booking will be accepted only for the current day and online booking should work only till 8pm.Once a table is booked, it is booked for the whole evening.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Resources
 
-### `npm test`
+https://reactjs.org/docs/getting-started.html
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+https://docs.npmjs.com/
 
-### `npm run build`
+https://testing-library.com/docs/
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+https://github.com/testing-library/eslint-plugin-testing-library/blob/main/docs/rules/render-result-naming-convention.md
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## TASK Details :
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- 1 : Creation of React App and Installing Various Pacakages.
 
-### `npm run eject`
+- 2 : Creating Source Folder for Components and Apis.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- 3 : Creating Server Folder for the Dummy Json Server.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- 4 : Creating Tests Folder for Code Unit Testing using JEST.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- 5 : Creating Api Folder for the several required Api Methods & Axios is used.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 1. Getting Started
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+npx create-react-app --foodinesta
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 2. Source Folder contains Components Folder & Api Folder
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+      Create Component Folder as Components and add your components for the react app inside it.
+      - Booking Form
+      - Cancel
+      - Homepage
+      - Navbar
+      - Thankyou
 
-### Analyzing the Bundle Size
+      Create TEST Folder as __test__ and add your test files for the react app inside it.
+      - Booking Form
+      - Cancel
+      - Homepage
+      - Navbar
+      - Thankyou
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+      Create API Folder as Api and add your Api file which holds the endpoint and all methods used in the react app.
+      - Booking Form
+      - Cancel
+      - Homepage
+      - Navbar
+      - Thankyou
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 3. Server Folder contains Dummy Json
 
-### Advanced Configuration
+      Create Dummy Json as tableData for the table & booking details made through the Api in the React app.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+      Table Data for Booked Tables with capacity of two runs at : http://localhost:5000/table2
 
-### Deployment
+      Table Data for Booked Tables with capacity of four runs at : http://localhost:5000/table4
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 4. Unit Testing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    The main benefit of unit testing is that it makes your project more agile. Whenever you add a new feature, you may have to change the old code. Changing a code that’s been tested already is costly and risky. However, if you run unit tests on the new code, you’ll be confident that the new code won’t break any old feature.
+
+### JEST Tool
+
+    Jest was the most popular JavaScript unit testing framework in 2020. For web apps that are based on React, Jest is the preferred framework. Apart from React, Jest supports unit testing of Angular, VueJS, NodeJS, and others.
+
+### Advantages:
+
+It’s easy to learn.
+It requires zero setup.
+Managing large test cases is relatively easy because of a snapshot capturing feature.
+
+---
+
+## Commands required
+
+### For Starting Json Server : npm run start-server
+
+    - Runs the server at port 5000.
+
+### For Starting The App : npm run start
+
+    - Runs the App at port 3000.
+
+### For Testing The App : npm run test
+
+    - Runs multiple unit testcases and gives it's output.
+
+## Topics :
+
+HTML, CSS, JavaScript, JSON, npm, Unit Testing, JEST, Api, Axios.
+
+---
+
+## Tools used
+
+- Visual Studio Code
+- React framework
+- HTML, CSS and Javascript
+- JEST
+- Testing Library
+- Json Server
+- Axios
+- Npm
+
+---
+
+### Author :
+
+        Sai Sarthak Mohapatra

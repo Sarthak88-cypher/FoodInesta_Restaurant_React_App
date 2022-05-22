@@ -1,0 +1,55 @@
+.bkngNotFound-bg {
+  width: 100%;
+  height: 900px;
+  background: rgba(196, 201, 208, 0.7);
+  position: absolute;
+}
+.bkngNotFound-content {
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+}
+.bkngNotFound-container {
+  max-width: 608px;
+  width: 100%;
+
+  background: #ffffff;
+  box-shadow: 0px 24px 44px rgba(3, 23, 111, 0.05);
+  border-radius: 16px;
+  margin: 0 auto;
+  margin-top: 25px;
+  position: relative;
+}
+.bkngNotFound-logo {
+    max-width: 100px;
+    margin: 0 auto;
+}
+.bkngNotFound-header {
+  font-family: "system-ui";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #101729;
+  display: block;
+}
+.bkngNotFound-exit {
+  box-sizing: border-box;
+  width: 70%;
+  height: 56px;
+  background: linear-gradient(127.18deg, #03176F 0.93%, #2A3E97 98.36%);
+  margin: 0 auto;
+  cursor: pointer;
+
+  border: 1px solid #e3e8ef;
+  border-radius: 6px;
+  font-family: "system-ui";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #e3e8ef;
+}
